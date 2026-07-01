@@ -104,7 +104,7 @@ The firmware was developed in Embedded C using STM32CubeIDE, with STM32CubeMX us
 - Implements a three-attempt lockout with a cooldown timer.
 - Uses UART communication with PuTTY to display system messages and debugging output.
 
-The complete firmware source code and STM32CubeMX configuration are included in the `Firmware` folder.
+The complete firmware source code is available in [`main.c`](Firmware/Core/Src/main.c).
 
 ## UART Debugging (PuTTY)
 
