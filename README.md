@@ -4,7 +4,7 @@
   <img src="Fusion%20Assembled%20View.png" width="750">
 </p>
 
-A complete embedded systems project featuring custom STM32 firmware, PCB design, hardware prototyping, and a custom 3D-printed enclosure.
+An end-to-end embedded systems project covering firmware development, PCB design, hardware prototyping, and mechanical enclosure design.
 
 ## Overview
 
@@ -85,3 +85,14 @@ Designed and built a complete embedded password-protected lock system using an S
 | Fusion Exploded View | Fusion Final Assembly |
 |---|---|
 | <img src="Fusion%20Exploded%20View.png" width="350"> | <img src="Fusion%20Assembled%20View.png" width="350"> |
+
+## Lessons Learned
+
+Through this project, I gained hands-on experience with:
+
+- Embedded firmware development using STM32CubeIDE and STM32CubeMX.
+- Designing, debugging, and validating circuits through breadboard prototyping.
+- Creating professional schematics and PCB layouts in Altium Designer.
+- Integrating electrical and mechanical designs into a complete embedded system.
+- Designing a custom 3D-printable enclosure with manufacturing considerations such as mounting features, clearances, and assembly.
+- Using UART communication to simplify firmware debugging and system testing.
