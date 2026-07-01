@@ -24,34 +24,33 @@ Designed and built a complete embedded password-protected lock system using an S
 ## System Workflow
 
 ```text
-Power On
-    │
-    ▼
-User Enters 4-Button Password
-    │
-    ▼
-Firmware Reads Button Inputs
-    │
-    ▼
-Password Verification
-    │
- ┌──┴─────────────┐
- │                │
- ▼                ▼
-Correct        Incorrect
- │                │
- ▼                ▼
-LED + Buzzer   Attempts--
-Access Granted     │
-                   ▼
-          3 Failed Attempts?
-              │
-          ┌───┴────┐
-          │        │
-         No       Yes
-          │        │
-          ▼        ▼
-      Try Again 10 Second Lockout
+                      Power On
+                          │
+                          ▼
+              Is Change Password Button Pressed?
+                    ┌───────────────┐
+                Yes │               │ No
+                    ▼               ▼
+      Verify Current Password   Enter 4-Button Password
+               │                        │
+        Correct?                        ▼
+         ┌────┴────┐           Firmware Reads Inputs
+      Yes│         │No                  │
+         ▼         ▼                    ▼
+ Enter New Password   Return      Verify Password
+         │                             │
+         ▼                       ┌─────┴─────┐
+ Password Updated            Correct      Incorrect
+         │                     │              │
+         ▼                     ▼              ▼
+      System Ready     Access Granted    Attempts--
+                                            │
+                                            ▼
+                                   3 Failed Attempts?
+                                      ┌────┴────┐
+                                   No │         │ Yes
+                                      ▼         ▼
+                                  Try Again   10 s Lockout
 ```
 
 ## Hardware
