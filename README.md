@@ -145,6 +145,10 @@ The UART terminal was used to verify:
 |---|---|
 | <img src="Fusion%20Exploded%20View.png" width="350"> | <img src="Fusion%20Assembled%20View.png" width="350"> |
 
+| UART Password Change | UART Lockout & Failed Attempts |
+|---|---|
+| <img src="PuTTY%20Password%20Change.png" width="350"> | <img src="PuTTY%20Incorrect%20Password.png" width="350"> |
+
 ## Lessons Learned
 
 Through this project, I gained hands-on experience with:
