@@ -39,3 +39,17 @@ Designed and built a complete embedded password-protected lock system using an S
 - Altium Designer
 - Autodesk Fusion 360
 - PuTTY
+
+## Project Gallery
+
+| Breadboard Prototype | Altium Schematic |
+|---|---|
+| <img src="Breadboard%20Prototype.jpg" width="350"> | <img src="Altium%20Schematic.png" width="350"> |
+
+| PCB Layout | PCB 3D View |
+|---|---|
+| <img src="Altium%202D%20View.png" width="350"> | <img src="Altium%203D%20View.png" width="350"> |
+
+| Fusion Exploded View | Fusion Final Assembly |
+|---|---|
+| <img src="Fusion%20Exploded%20View.png" width="350"> | <img src="Fusion%20Assembled%20View.png" width="350"> |
