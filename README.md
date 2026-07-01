@@ -106,9 +106,30 @@ The firmware was developed in Embedded C using STM32CubeIDE, with STM32CubeMX us
 
 The complete firmware source code and STM32CubeMX configuration are included in the `Firmware` folder.
 
-### UART Debugging (PuTTY)
+## UART Debugging (PuTTY)
 
-PuTTY was used as a serial terminal to monitor the STM32 firmware during development and debugging. The microcontroller communicated with the PC over a UART interface through the ST-Link virtual COM port (COM5) configured at 115200 baud, 8 data bits, no parity, 1 stop bit (8N1), and no flow control. Real-time serial output was used to verify button inputs, password authentication, remaining login attempts, password change operations, and overall system behavior without requiring additional debugging hardware.
+PuTTY was used as a serial terminal to monitor the STM32 firmware during development and debugging. The microcontroller communicates with the PC over the ST-Link Virtual COM Port (**COM5**) configured with the following settings:
+
+| Setting | Value |
+|---------|-------|
+| Serial Port | COM5 |
+| Baud Rate | 115200 |
+| Data Bits | 8 |
+| Stop Bits | 1 |
+| Parity | None |
+| Flow Control | None |
+
+The UART terminal was used to verify:
+
+- Password authentication
+- Password change functionality
+- Failed login attempts
+- Security lockout countdown
+- Overall firmware behavior in real time
+
+| Password Change | Incorrect Password & Lockout |
+|:---:|:---:|
+| <img src="PuTTY%20Password%20Change.png" width="450"> | <img src="PuTTY%20Incorrect%20Password.png" width="450"> |
 
 ## Project Gallery
 
