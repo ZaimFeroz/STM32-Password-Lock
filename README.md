@@ -21,6 +21,39 @@ Designed and built a complete embedded password-protected lock system using an S
 - Custom PCB designed in Altium Designer
 - Custom enclosure designed in Fusion 360
 
+## System Workflow
+
+```text
+Power On
+    │
+    ▼
+User Enters 4-Button Password
+    │
+    ▼
+Firmware Reads Button Inputs
+    │
+    ▼
+Password Verification
+    │
+ ┌──┴─────────────┐
+ │                │
+ ▼                ▼
+Correct        Incorrect
+ │                │
+ ▼                ▼
+LED + Buzzer   Attempts--
+Access Granted     │
+                   ▼
+          3 Failed Attempts?
+              │
+          ┌───┴────┐
+          │        │
+         No       Yes
+          │        │
+          ▼        ▼
+      Try Again 10 Second Lockout
+```
+
 ## Hardware
 
 - STM32F401RE (NUCLEO-F401RE)
