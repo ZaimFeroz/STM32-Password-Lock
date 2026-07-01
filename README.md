@@ -72,6 +72,39 @@ Designed and built a complete embedded password-protected lock system using an S
 - Autodesk Fusion 360
 - PuTTY
 
+## STM32 Firmware & Pinout
+
+The firmware was developed in Embedded C using STM32CubeIDE, with STM32CubeMX used to configure the microcontroller pinout and generate initialization code.
+
+### Pinout Configuration
+
+<p align="center">
+  <img src="Pinout.png" width="650">
+</p>
+
+| Function | STM32 Pin | Purpose |
+|---|---|---|
+| Button 1 | PA0 | Password input |
+| Button 2 | PA1 | Password input |
+| Button 3 | PA4 | Password input |
+| Button 4 | PB3 | Password input |
+| Change Password Button | PB4 | Enters password change mode |
+| Green LED | PA5 | Access granted/status feedback |
+| Red LED | PA6 | Access denied/lockout feedback |
+| Buzzer | PA7 | Audible feedback |
+| UART TX | PA2 | Serial debugging through PuTTY |
+| UART RX | PA3 | Serial debugging through PuTTY |
+
+### Firmware Functionality
+
+- Reads push-button inputs and stores them as a 4-button password sequence.
+- Compares the entered sequence against the saved password.
+- Provides LED and buzzer feedback for access granted and access denied states.
+- Includes a password change mode that requires the current password before updating.
+- Implements a three-attempt lockout with a cooldown timer.
+- Uses UART communication with PuTTY to display system messages and debugging output.
+
+The complete firmware source code and STM32CubeMX configuration are included in the `Firmware` folder.
 ## Project Gallery
 
 | Breadboard Prototype | Altium Schematic |
