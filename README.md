@@ -1,6 +1,6 @@
 # STM32 Password-Protected Lock System
 
-> A complete embedded systems project featuring custom STM32 firmware, PCB design, hardware prototyping, and a custom 3D-printed enclosure.
+A complete embedded systems project featuring custom STM32 firmware, PCB design, hardware prototyping, and a custom 3D-printed enclosure.
 
 ## Overview
 
